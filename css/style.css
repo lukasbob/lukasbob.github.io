@@ -1,0 +1,73 @@
+body {
+    font-family: monospace;
+    background:  #222;
+    color: #eee;
+}
+
+body {
+    display: grid;
+    place-content: center;
+}
+
+h1, p {
+    background-color: #111;
+    padding: 0.3em 0.8em 0.2em;
+    margin: 0.5em 0;
+
+}
+
+h1 {
+    font-size: 7em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 2em;
+}
+
+main {
+    margin: 2em 4em 4em 2em;
+    padding: 2em;
+}
+
+.rgb {
+    text-shadow: 3px 3px 0px rgba(255, 0, 0, 1), -3px 3px 0px rgba(0, 255, 0, 1),
+      3px -3px 0px rgba(0, 0, 255, 1);
+  }
+
+.rgb-anim {
+    animation: rgb 0.5s;
+    animation-iteration-count: infinite;
+}
+
+  @keyframes rgb {
+    32% {
+      text-shadow: 3px 3px 0px rgba(255, 0, 0, 1), -3px 3px 0px rgba(0, 255, 0, 1),
+        3px -3px 0px rgba(0, 0, 255, 1);
+    }
+
+    33% {
+      text-shadow: 3px 3px 0px rgba(0, 255, 0, 1), -3px 3px 0px rgba(0, 0, 255, 1),
+        3px -3px 0px rgba(255, 0, 0, 1);
+    }
+
+    65% {
+      text-shadow: 3px 3px 0px rgba(0, 255, 0, 1), -3px 3px 0px rgba(0, 0, 255, 1),
+        3px -3px 0px rgba(255, 0, 0, 1);
+    }
+
+    66% {
+      text-shadow: 3px 3px 0px rgba(0, 0, 255, 1), -3px 3px 0px rgba(255, 0, 0, 1),
+        3px -3px 0px rgba(0, 255, 0, 1);
+    }
+
+    98% {
+      text-shadow: 3px 3px 0px rgba(0, 0, 255, 1), -3px 3px 0px rgba(255, 0, 0, 1),
+        3px -3px 0px rgba(0, 255, 0, 1);
+    }
+
+    99% {
+      text-shadow: 3px 3px 0px rgba(255, 0, 0, 1), -3px 3px 0px rgba(0, 255, 0, 1),
+        3px -3px 0px rgba(0, 0, 255, 1);
+    }
+  }
